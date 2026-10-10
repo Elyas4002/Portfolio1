@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@theme {
+  --color-bg: #0b0b0f; --color-surface: #121218; --color-line: #262631;
+  --color-ink: #ecebe6; --color-mute: #9d9dab; --color-accent: #8087ff;
+  --font-sans: "Hanken Grotesk", system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+}
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { background: var(--color-bg); color: var(--color-ink); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; border-radius: 4px; }
+.spin { animation: spin 50s linear infinite; transform-origin: 200px 200px; }
+.spin-rev { animation: spin 80s linear infinite reverse; transform-origin: 200px 200px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes drop { 0%,100% { transform: scaleY(.3); } 50% { transform: scaleY(1); } }
+.drop { animation: drop 2.2s ease-in-out infinite; transform-origin: top; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .spin, .spin-rev, .drop { animation: none; } }
