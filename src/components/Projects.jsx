@@ -50,7 +50,7 @@ function Project({ p, flip }) {
             <motion.div id={`cs-${p.id}`} initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden">
               <dl className="mt-4 space-y-4 rounded-xl border border-line bg-surface p-5 text-sm">
                 <div><dt className="text-mute">What it practises</dt><dd className="mt-1">{p.problem}</dd></div>
-                <div><dt className="text-mute">Process and results</dt><dd className="mt-1 text-mute">Placeholder: add your approach, challenges and what you learned.</dd></div>
+                <div><dt className="text-mute">Process and results</dt><dd className="mt-1 text-mute"></dd></div>
               </dl>
             </motion.div>
           )}
