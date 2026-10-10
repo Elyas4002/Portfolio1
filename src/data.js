@@ -30,7 +30,7 @@ export const PROJECTS = [
     summary: 'A hospital website layout built with react.',
     tech: ['HTML', 'CSS'],
     features: ['Grid-based layout', 'Responsive structure'],
-    problem: 'Practice in arranging content with CSS Grid so it adapts to different screen sizes.',
+    problem: 'Practice in building a responsive webiste using react.',
     context: 'Coursework.' },
   { id: 'form', title: 'Form', live: 'https://form-elyas.netlify.app/', repo: null,
     summary: 'A form interface focused on clear structure and styling.',
